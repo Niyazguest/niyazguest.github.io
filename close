@@ -1,0 +1,7 @@
+<html>
+<body>
+<script>
+    window.Telegram.WebApp.close();
+</script>
+</body>
+</html>
