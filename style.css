@@ -1,0 +1,141 @@
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Контейнер формы */
+        .red-form {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(183, 28, 28, 0.15);
+            width: 100%;
+            max-width: 480px;
+            border-top: 6px solid #b71c1c; /* Яркая красная полоса сверху */
+        }
+
+        .form-title {
+            text-align: center;
+            color: #b71c1c;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* Группа полей */
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        /* Подписи сверху */
+        label {
+            display: block;
+            font-weight: 600;
+            color: #c62828;
+            margin-bottom: 8px;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Стили для текстовых полей и текстовой области */
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ffcdd2;
+            border-radius: 8px;
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+            outline: none;
+            font-family: inherit;
+            color: #333;
+        }
+
+        textarea:focus, input[type="text"]:focus {
+            border-color: #d32f2f;
+            box-shadow: 0 0 0 4px rgba(211, 47, 47, 0.15);
+        }
+
+        /* Текстовая область (расширяемая) */
+        textarea {
+            resize: vertical; /* Разрешаем изменение размера только по вертикали */
+            min-height: 110px;
+        }
+
+        /* Контейнер для поиска и выпадающего списка */
+        .search-container {
+            position: relative;
+        }
+
+        /* Иконка лупы внутри поля поиска */
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #e57373;
+            font-size: 18px;
+            pointer-events: none;
+        }
+
+        .search-input {
+            padding-left: 40px !important; /* Отступ под иконку */
+        }
+
+        /* Выпадающий список */
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border: 2px solid #d32f2f;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            max-height: 220px;
+            overflow-y: auto;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none; /* Скрыт по умолчанию */
+            z-index: 10;
+            box-shadow: 0 6px 12px rgba(183, 28, 28, 0.1);
+        }
+
+        .dropdown li {
+            padding: 12px 15px;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            color: #444;
+            border-bottom: 1px solid #ffebee;
+        }
+
+        .dropdown li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown li:hover {
+            background-color: #ffebee;
+            color: #b71c1c;
+            font-weight: 500;
+        }
+
+        /* Кастомный скроллбар для списка */
+        .dropdown::-webkit-scrollbar { width: 8px; }
+        .dropdown::-webkit-scrollbar-track { background: #ffebee; border-radius: 0 0 8px 0; }
+        .dropdown::-webkit-scrollbar-thumb { background: #e53935; border-radius: 4px; }
+        .dropdown::-webkit-scrollbar-thumb:hover { background: #b71c1c; }
+
+        #map {
+            height:300px;
+            width: auto;
+        }
